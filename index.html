@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SalaDev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="main.js" defer></script>
+    <!-- SweetAlert2 Dark Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.min.css"
+    />
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  </head>
+  <body id="content">
+    <img class="image-gradient" src="images/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+    <div class="container">
+      <header>
+        <!-- Logo on the left -->
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+
+        <!-- Navigation links on the right -->
+        <nav id="navLinks">
+          <a data-aos="fade-down" data-aos-duration="1500" href="#content "
+            >Home</a
+          >
+          <a data-aos="fade-down" data-aos-duration="2000" href="#about"
+            >About</a
+          >
+          <a data-aos="fade-down" data-aos-duration="3000" href="#projects"
+            >Projects</a
+          >
+          <a data-aos="fade-down" data-aos-duration="3000" href="#contact"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Toggle menu button for mobile -->
+        <button
+          class="toggle-btn"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <main>
+        <div class="content">
+          <div class="tag-box">
+            <p
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="1500"
+              class="tag"
+            >
+              I'm Gene Elpie, a
+            </p>
+          </div>
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="2000"
+            class="position"
+          >
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </h1>
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="2500"
+            class="description"
+          >
+            with a passion for creating impactful digital solutions and visually
+            compelling designs. I specialize in transforming ideas into
+            interactive experiences that resonate with audiences.
+          </p>
+          <div class="buttons">
+            <a
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="3000"
+              href="images/Landoy_Gene_Elpie_CV.pdf"
+              class="btn-download"
+              download="Landoy_Gene_Elpie_CV.pdf"
+            >
+              Download CV
+            </a>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons-align">
+              <div class="social-icons">
+                <a
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="3000"
+                  href="https://github.com/PrimeSalad"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="3000"
+                  href="https://www.linkedin.com/in/gene-elpie-landoy-b1851b28b/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="3000"
+                  href="https://www.instagram.com/elpzfny/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="3000"
+                  href="https://www.youtube.com/@S4laddd"
+                  target="_blank"
+                  aria-label="YouTube"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.2/build/spline-viewer.js"
+    ></script>
+    <spline-viewer
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+      data-aos-duration="3000"
+      class="id-photo"
+      url="https://prod.spline.design/Fbw12o7J261d8cRX/scene.splinecode"
+    ></spline-viewer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <div class="overflow">
+      <section id="about" class="gene-wrapper">
+        <div class="gene-header">
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="50"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="gene-title-main"
+          >
+            About<span class="highlight">.</span>
+          </h1>
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="50"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="ques"
+          >
+            Path of <span class="highlight">Progress</span>
+          </p>
+
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="50"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="gene-profile"
+          >
+            <img src="images/icon.jpg" alt="Profile Image" />
+            <div class="gene-profile-info">
+              <h2>Gene Elpie Landoy</h2>
+              <p>Bachelor of Science in Information Technology</p>
+              <p>Boac, Marinduque, Philippines</p>
+              <p span id="email-text" class="gene-email">
+                g.landoyelpie@gmail.com
+                <i
+                  class="fa-regular fa-copy copy-icon"
+                  onclick="copyEmail()"
+                ></i>
+              </p>
+              <div class="gene-socials">
+                <div class="gene-socials">
+                  <a href="https://github.com/PrimeSalad" title="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/gene-elpie-landoy-b1851b28b/"
+                    title="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://www.facebook.com/pickl.piee" title="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://www.instagram.com/elpzfny/" title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="50"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          class="gene-columns"
+        >
+          <!-- Column 1 -->
+          <div class="gene-col">
+            <h3 class="highlights">Education</h3>
+            <div class="gene-edu">
+              <img src="images/marsulogo.png" alt="MarSULogo" />
+              <div>
+                <p class="section-title">
+                  Bachelor of Science in Information Technology
+                </p>
+                <p>Major in Software Development</p>
+                <p>Aug 2022 – June 2026</p>
+                <p>Marinduque State University</p>
+              </div>
+            </div>
+            <div class="gene-edu">
+              <img src="images/mnhs.png" alt="MNHS Logo" />
+              <div>
+                <p class="section-title">
+                  Science, Technology, Engineering, and Mathematics
+                </p>
+                <p>Aug 2020 – July 2022</p>
+                <p>Marinduque National High School</p>
+              </div>
+            </div>
+
+            <h3 class="highlights spacing">Certificates</h3>
+            <ul class="gene-certificates">
+              <li onclick="showPopup('certif/1.jpg')">
+                Trainocate - Python Workshop
+              </li>
+              <li onclick="showPopup('certif/7.jpg')">Hack4Gov3</li>
+              <li onclick="showPopup('certif/2.jpg')">
+                Google Developer Coding Bootcamp
+              </li>
+              <li onclick="showPopup('certif/3.jpg')">DICT_PNPKI_Webinar</li>
+              <li onclick="showPopup('certif/5.jpg')">QUAVE - CyberSecurity</li>
+              <li onclick="showPopup('certif/6.jpg')">
+                QUAVE - Utilizing ChatGPT Prompts
+              </li>
+              <li onclick="showPopup('certif/4.jpg')">
+                DICT - Adobe After Effects Webinar
+              </li>
+            </ul>
+
+            <!-- Image Popup -->
+            <div id="popup" class="popup">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <img id="popup-img" src="" alt="Certificate" />
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="gene-col">
+            <h3 class="highlights">Experience</h3>
+
+            <div class="gap-exp">
+              <p class="section-title">Infocus Publication</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Associate Editor-in-chief (2024 - 2025)
+                </li>
+                <li class="grey-li">Editor-in-chief (2024 - 2025)</li>
+                <li class="grey-li">Layout Artist (2023 - 2024)</li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">DICT Hack4Gov3</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Specialized in Web Exploitation (Oct 2024)
+                </li>
+                <li class="grey-li">Rank 24 - Individual Points</li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">Y4IT Research Summit</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Top 300+ participant nationwide
+                </li>
+                <li class="grey-li">
+                  Presented: "CarabaoCart – E-Commerce Platform"
+                </li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">DOST – RICE</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Presented Arduino NPK deficiency detection system
+                </li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">DepEd – RSTF</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Presented at Regional Science & Technology Fair
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="gene-col">
+            <h3 class="highlights">Awards and Achievements</h3>
+
+            <div class="gap-exp">
+              <p class="section-title">
+                College of Information and Computing Sciences
+              </p>
+              <ul>
+                <li class="grey-li space-top">
+                  Rank 2 - Dean’s Lister (2nd Sem AY 2024–2025)
+                </li>
+                <li class="grey-li">
+                  Rank 27 - Dean’s Lister (1st Sem AY 2024–2025)
+                </li>
+                <li class="grey-li">
+                  Rank 1 - Dean’s Lister (2nd Sem AY 2023–2024)
+                </li>
+                <li class="grey-li">
+                  Rank 1 - Dean’s Lister (1st Sem AY 2023–2024)
+                </li>
+                <li class="grey-li">
+                  Rank 3 - Dean’s Lister (1st Sem AY 2022–2023)
+                </li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">Marinduque State University</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Recognized Creator of the Official MarSU Logo
+                </li>
+                <li class="grey-li">
+                  Excellence in Technical Assistance – Students' Week 2024
+                </li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">
+                Infocus Publication Unit & Broadcasting
+              </p>
+              <ul>
+                <li class="grey-li space-top">Service Award (AY 2024–2025)</li>
+                <li class="grey-li">Service Award (AY 2023–2024)</li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">Civil Service Commission (CSC)</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Passed Professional Exam (Mar 2024)
+                </li>
+                <li class="grey-li">Qualified for government positions</li>
+                <li class="grey-li">Recognized for merit & competency</li>
+              </ul>
+            </div>
+
+            <div class="gap-exp">
+              <p class="section-title">Marinduque National High School</p>
+              <ul>
+                <li class="grey-li space-top">
+                  Graduated with High Honors (SY 2021–2022)
+                </li>
+                <li class="grey-li">Awarded Researcher of the Year (2019)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="skills">
+      <div class="gene-wrapper">
+        <div class="gene-header">
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="gene-title-main"
+          >
+            Skills<span class="highlight">.</span>
+          </h1>
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="ques"
+          >
+            Tools and <span class="highlight">Technologies</span>
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          class="cards"
+        >
+          <!-- Graphics Design -->
+          <div class="card">
+            <img src="images/gd.jpg" alt="Graphics Design" />
+            <h2>GRAPHICS <span class="highlight">DESIGN</span></h2>
+            <p>
+              7 years of experience in graphic design, specializing in branding,
+              layout, and digital content creation. Skilled at turning concepts
+              into compelling visuals that communicate clearly and leave a
+              lasting impression. Experience includes working with student
+              publications, freelance clients, and various
+              organizations—delivering high-quality designs for logos, posters,
+              social media content, magazines, and more. Known for clean
+              layouts, strong typography, and a sharp eye for detail.
+            </p>
+            <div class="tools">
+              <img src="images/ps.png" title="Photoshop" />
+              <img src="images/id.png" title="InDesign" />
+              <img src="images/il.png" title="Illustrator" />
+              <img src="images/ca.png" title="Canva" />
+            </div>
+          </div>
+
+          <!-- Video Editing -->
+          <div class="card">
+            <img src="images/vd.jpg" alt="Video Editing" width="200px" />
+            <h2>VIDEO <span class="highlight">EDITING</span></h2>
+            <p>
+              5 years of experience creating engaging and impactful content for
+              various platforms. From promotional materials and event highlights
+              to social media content and short documentaries, every project is
+              approached with a strong sense of storytelling and creativity.
+              Experience includes freelance work, student-led productions, and
+              collaborations with organizations. Reliable, detail-oriented, and
+              able to meet deadlines without compromising quality.
+            </p>
+            <div class="tools">
+              <img src="images/pr.png" title="Premiere Pro" />
+              <img src="images/ae.png" title="After Effects" />
+              <img src="images/ca.png" title="Canva" />
+              <img src="images/da.png" title="DaVinci Resolve" />
+              <img src="images/cap.png" title="CapCut" />
+            </div>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="card">
+            <img src="images/ui.jpg" alt="Digital Marketing " />
+            <h2>DIGITAL <span class="highlight">MARKETING</span></h2>
+            <p>
+              3 years of experience managing brand presence and engagement
+              through Meta Business Suite. Focused on creating effective
+              content, scheduling posts, running ad campaigns, and analyzing
+              performance to improve reach and impact. Skilled in managing
+              Facebook and Instagram pages, handling insights, and boosting
+              content to drive audience growth. Experienced in creating
+              graphics, writing captions, and maintaining a consistent brand
+              voice across platforms.
+            </p>
+            <div class="tools">
+              <img src="images/bs.png" title="Business Suite" />
+              <img src="images/ca.png" title="Canva" />
+              <img src="images/id.png" title="InDesign" />
+              <img src="images/il.png" title="Illustrator" />
+              <img src="images/ps.png" title="Photoshop" />
+            </div>
+          </div>
+
+          <!-- Game Development -->
+          <div class="card">
+            <img src="images/game.jpg" alt="Game Dev" />
+            <h2>GAME <span class="highlight">DEVELOPMENT</span></h2>
+            <p>
+              2 years of experience designing and building interactive games
+              using modern development tools and frameworks. Skilled in both
+              gameplay programming and UI design, with a focus on creating
+              smooth, engaging user experiences. Worked on indie projects,
+              student research-based games, and prototypes aimed at innovation
+              and education. Always exploring new ideas and pushing creative
+              boundaries through code and design.
+            </p>
+            <div class="tools">
+              <img src="images/u.png" title="Unity" />
+              <img src="images/ja.png" title="Java" />
+              <img src="images/c.png" title="C#" />
+              <img src="images/git.png" title="GitHub" />
+              <img src="images/fl.png" title="Dart" />
+              <img src="images/an.png" title="Android Studio" />
+              <img src="images/fb.png" title="Firebase" />
+            </div>
+          </div>
+
+          <!-- Mobile Development -->
+          <div class="card">
+            <img src="images/mobile.jpg" alt="Mobile Dev" />
+            <h2>MOBILE <span class="highlight">DEVELOPMENT</span></h2>
+            <p>
+              3 years of experience building Android applications using Java,
+              Android Studio, and Flutter. Skilled in developing both native and
+              cross-platform apps, with a focus on performance, clean UI, and
+              smooth user interaction. Proficient in Android SDK, XML layouts,
+              Firebase integration, RESTful APIs, local databases (SQLite,
+              Room). Projects include student apps, freelance tools, and
+              prototypes—built with attention to functionality, and design.
+            </p>
+            <div class="tools">
+              <img src="images/git.png" title="GitHub" />
+              <img src="images/an.png" title="Android Studio" />
+              <img src="images/fb.png" title="Firebase" />
+              <img src="images/fl.png" title="Dart" />
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="card">
+            <img src="images/web.jpg" alt="Web Dev" />
+            <h2>WEB <span class="highlight">DEVELOPMENT</span></h2>
+            <p>
+              4 years of experience building responsive, user-focused websites
+              and web applications. Skilled in both front-end and back-end
+              development, with a strong foundation in clean code, modern
+              design, and functionality. Projects range from personal websites
+              and client portfolios to full-stack systems with dynamic content,
+              authentication, and database integration. Focused on performance,
+              accessibility, and delivering seamless user experiences across all
+              devices.
+            </p>
+            <div class="tools">
+              <img src="images/h.png" title="Html 5" />
+              <img src="images/css.png" title="CSS" />
+              <img src="images/js.png" title="Javascript" />
+              <img src="images/r.png" title="React" />
+              <img src="images/fig.png" title="Figma" />
+              <img src="images/la.png" title="Laravel" />
+              <img src="images/php.png" title="PHP" />
+              <img src="images/nodejs.jpg" title="Node JS" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-offset="0"
+      data-aos-duration="500"
+      id="projects"
+      class="skills"
+    >
+      <div class="gene-wrapper">
+        <div class="gene-header">
+          <h1
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="gene-title-main"
+          >
+            Projects<span class="highlight">.</span>
+          </h1>
+          <p
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+            data-aos-duration="500"
+            class="ques"
+          >
+            Work <span class="highlight">Showcase</span>
+          </p>
+        </div>
+
+        <div class="main-project">
+          <div class="project-image">
+            <img src="images/gd.jpg" alt="Harambe Banner" />
+            <div class="carousel-buttons">
+              <button class="carousel-btn">
+                <i data-feather="arrow-left"></i>
+              </button>
+              <button class="carousel-btn">
+                <i data-feather="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-info">
+              <h2>Thread<span class="highlight">ify</span></h2>
+              <p class="sub">PC Game</p>
+              <p class="description">Long or short description goes here...</p>
+
+              <!-- ✅ Buttons stay inside project-info -->
+              <div class="buttons-align">
+                <div class="buttons">
+                  <a href="#" id="downloadBtn" class="btn" target="_blank">
+                    <i data-feather="external-link"></i> View
+                  </a>
+                  <a href="#" id="githubBtn" class="btn" target="_blank">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                      class="github-icon"
+                    />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="other-projects">
+          <div class="other-header">
+            <p class="other-proj-font">
+              All <span class="highlight">Projects</span>
+            </p>
+            <div class="sort-wrapper">
+              <button class="sort-btn" onclick="toggleSortMenu()">
+                <i class="fas fa-sort"></i> Filter
+              </button>
+
+              <ul class="sort-menu" id="sortMenu">
+                <li onclick="filterProjects('all')">All</li>
+                <li onclick="filterProjects('graphics')">Graphics Design</li>
+                <li onclick="filterProjects('video')">Video</li>
+                <li onclick="filterProjects('website')">Website</li>
+                <li onclick="filterProjects('application')">
+                  Application/Game
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Dynamic project grid wrapper -->
+          <div id="projectGridWrapper" class="project-grid-wrapper"></div>
+
+          <div class="next-controls">
+            <button onclick="scrollCarousel(-1)" aria-label="Scroll left">
+              <i data-feather="arrow-left"></i>
+            </button>
+            <button onclick="scrollCarousel(1)" aria-label="Scroll right">
+              <i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-offset="0"
+      data-aos-duration="500"
+      class="gene-wrapper"
+    >
+      <div class="gene-header">
+        <h1
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          class="gene-title-main"
+        >
+          Testimonials<span class="highlight">.</span>
+        </h1>
+        <p
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          class="ques"
+        >
+          Words from Clients<span class="highlight"> and Colleagues</span>
+        </p>
+      </div>
+
+      <section class="testimonials-grid">
+        <!-- Card 1 -->
+        <div class="card-two card-highlight card-span-2">
+          <div class="header">
+            <img src="images/jv.jpg" alt="" />
+            <div>
+              <h4>Engr. Jayvi M. Mandalihan, LPT</h4>
+              <p>College of Information and Computing Sciences - Lecturer</p>
+            </div>
+          </div>
+          <h3>Consistency, Commitment, and Quiet Strength</h3>
+          <p class="quote">
+            “ One of the best qualities of a good leader is being someone others
+            can count on; someone who shows up and gives their best no matter
+            the challenge. That’s who Mr. Landoy is. As someone who has taught
+            him in previous courses, especially during group projects, I’ve seen
+            how he always gives his full effort, not just helping, but truly
+            committing to the task like it’s his own. ‎ ‎Apparently, he doesn’t
+            do things for show, but deep down, Mr. Landoy hopes his efforts are
+            seen and appreciated. Like anyone who works hard, a simple
+            recognition gives him that extra push to keep going. He may not say
+            it out loud, but being appreciated reminds him that what he’s doing
+            matters. ”
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-two card-dark">
+          <div class="header">
+            <img src="images/sa.jpg" alt="" />
+            <div>
+              <h4>Aldrin Requiz, MIT</h4>
+              <p>College of Information and Computing Sciences</p>
+            </div>
+          </div>
+          <h3>Reliable, Collaborative, and Always Present</h3>
+          <p class="quote">
+            “Mr. Landoy is the kind of teammate who brings stability and quiet
+            strength to any group. He doesn’t need to stand out to make a
+            difference—his consistency, support, and genuine commitment
+            naturally lift the entire team. Always reliable, always present, and
+            always working with purpose.”
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-two card-white card-span-2-rows">
+          <div class="header">
+            <img src="images/sm.jpg" alt="" />
+            <div>
+              <h4>Shiela Mae Liwanagan</h4>
+              <p>Information Technology</p>
+            </div>
+          </div>
+          <h3>Skilled, Supportive, and Goal-Oriented</h3>
+          <p class="quote">
+            “Mr. Landoy stands out not just for his technical abilities but for
+            how well he works with others. He brings strong skills to the table,
+            whether in design, development, or collaboration, and uses them to
+            help the team succeed. He listens, contributes thoughtfully, and
+            stays focused on shared goals. Reliable, skilled, and easy to work
+            with, he is the kind of teammate every project needs.Mr. Landoy
+            stands out not just for his technical abilities but for how
+            naturally he works within a team. Whether in design, development, or
+            collaborative problem-solving, he consistently brings valuable
+            skills and a focused mindset to every task. He is the kind of person
+            who listens first, contributes with intention, and always puts the
+            success of the team above personal credit."
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-two card-white">
+          <div class="header">
+            <img src="images/ry.jpg" alt="" />
+            <div>
+              <h4>Ryan Rodelas</h4>
+              <p>Information Technology</p>
+            </div>
+          </div>
+          <h3>A Natural and Effective Leader</h3>
+          <p class="quote">
+            “Mr. Landoy leads with purpose, not pressure. He knows how to guide
+            a team with clarity, patience, and confidence, making sure everyone
+            feels heard and supported. What sets him apart is his ability to
+            stay calm under pressure while staying focused on the bigger
+            picture. ”
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-two card-dark card-span-2">
+          <div class="header">
+            <img src="images/kz.png" alt="" />
+            <div>
+              <h4>Kryzha Lineses Lope</h4>
+              <p>
+                Educational System Technological Institute - Computer Science
+              </p>
+            </div>
+          </div>
+          <h3>Excellence in Every Detail and Delivers Results That Matter</h3>
+          <p class="quote">
+            “ Mr. Landoy is one of the most reliable and technically skilled
+            professionals I’ve had the pleasure of working with. He consistently
+            delivers high-quality results and stays updated with the latest
+            technologies, ensuring that every project is both efficient and
+            future-ready. What makes him truly stand out is his dedication to
+            client satisfaction. He listens carefully, communicates clearly, and
+            always goes the extra mile to make sure the final output exceeds
+            expectations. His strong sense of responsibility and attention to
+            detail make him someone you can trust, not just to get the job done,
+            but to do it with excellence. If you’re looking for someone who is
+            both technically sharp and service-oriented, Mr. Landoy is the kind
+            of professional you want on your team.”
+          </p>
+        </div>
+      </section>
+    </div>
+    <section
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-offset="0"
+      data-aos-duration="500"
+      id="contact"
+      class="contact-section"
+    >
+      <div class="contact-info">
+        <h2>Contact<span class="highlight"> Me</span></h2>
+        <p>
+          This is your gateway to connect with me directly. Whether you have
+          inquiries, feedback, or simply want to say hello.
+        </p>
+
+        <div class="info-block">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="info-text">
+            <div>Address</div>
+            <span>Boac, Marinduque, Philippines</span>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <i class="fas fa-phone-alt"></i>
+          <div class="info-text">
+            <div>Contact</div>
+            <span>976 304 7012</span>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <i class="fas fa-envelope"></i>
+          <div class="info-text">
+            <div>Email</div>
+            <span>g.landoyelpie@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="social-icon">
+          <a href="https://www.facebook.com/pickl.piee"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/elpzfny/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/gene-elpie-landoy-b1851b28b/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.youtube.com/@S4laddd"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="message">Description:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
